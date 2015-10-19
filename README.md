@@ -34,6 +34,17 @@ Every option is optional.
 If silent is true, and the input is a TTY, then read will set raw
 mode, and read character by character.
 
+## RETURN VALUE
+
+```javascript
+var read = require("read")
+var reader = read(options, callback);
+reader.abort(); 
+```
+
+* `abort()` cancel readline
+
+
 ## COMPATIBILITY
 
 This module works sort of with node 0.6.  It does not work with node
